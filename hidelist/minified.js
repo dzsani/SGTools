@@ -5,7 +5,7 @@
 
 // Rejtett felhasználók
 // Vesszõvel elválasztva sorold fel azokat a felhasználóneveket
-// akiket ki akarsz tiltani a témából. Szóközt ne használj!
+// akiknek rejteni szeretnéd az üzeneteit a témában. Szóközt ne használj!
 // Példa: var hl_users = 'név1,név2,név3';
 
 var hl_users = 'Ability';
