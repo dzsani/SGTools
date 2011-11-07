@@ -13,7 +13,10 @@ var pt_users = '';
 
 // EZT A RÉSZT NE MÓDOSÍTSD !!!
 $(document).ready(function() {
-	
+
+	// Create an array with the nicknames
+	pt_users = pt_users.split(',');
+
 	// Get nickname
 	var nick = $('.std1:eq(1)').html().replace("Bejelentkezve: ","");
 	

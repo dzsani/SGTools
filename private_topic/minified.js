@@ -12,4 +12,4 @@ var pt_users = '';
 
 
 // EZT A RÉSZT NE MÓDOSÍTSD !!!
-$(document).ready(function(){var a=$('.std1:eq(1)').html().replace("Bejelentkezve: ","");if(pt_users.indexOf(a)==-1){alert('Ez egy privát téma, nincs jogosultságod az olvasásához!');history.go(-1)}});
+$(document).ready(function(){pt_users=pt_users.split(',');var a=$('.std1:eq(1)').html().replace("Bejelentkezve: ","");if(pt_users.indexOf(a)==-1){alert('Ez egy privát téma, nincs jogosultságod az olvasásához!');history.go(-1)}});
