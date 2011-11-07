@@ -1,0 +1,6 @@
+Topik scriptek az SG.hu fórumához.
+
+Minden scriptnek külön mappája van. A mappákban található source állomány a fejlesztőknek 
+van fenntartva, akik talán bele akarnak szerkeszteni a script működésébe. Akik csak használni
+akarják a scripteket, nekik a minified verziót kell választaniuk, mert egyszerűbb velük 
+dolgozni, kisebb a méretük.
