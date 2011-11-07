@@ -1,12 +1,12 @@
-// SG.hu topic banlist v1.0 20111107
+// SG.hu topic hidelist v1.0 20111107
 // Készítette: dzsani
 // Inspiráció: cSuwwi - Drom - http://drom.hu/
 
 
-// Tiltott felhasználók
+// Rejtett felhasználók
 // Vesszõvel elválasztva sorold fel azokat a felhasználóneveket
 // akiket ki akarsz tiltani a témából. Szóközt ne használj!
-// Példa: var bl_users = 'név1,név2,név3';
+// Példa: var hl_users = 'név1,név2,név3';
 
 var hl_users = 'Ability';
 
