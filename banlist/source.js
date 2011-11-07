@@ -15,6 +15,9 @@ var bl_users = '';
 // EZT A RÉSZT NE MÓDOSÍTSD !!!
 $(document).ready(function() {
 	
+	// Create an array with the nicknames
+	bl_users = bl_users.split(',');
+	
 	// Iterate over the posts
 	$('.topichead').each(function() {
 		
