@@ -4,3 +4,8 @@ Minden scriptnek külön mappája van. A mappákban található source állomán
 van fenntartva, akik talán bele akarnak szerkeszteni a script működésébe. Akik csak használni
 akarják a scripteket, nekik a minified verziót kell választaniuk, mert egyszerűbb velük 
 dolgozni, kisebb a méretük.
+
+A scripteket tekintsétek egyfajta építőelemeknek, amiket lehet kombinálni. Minden egyes 
+scriptnél az a cél, hogy minél kisebbek legyenek. Nincsenek beállítási lehetőségek,
+nincs egy nagy script ami mindent tud. Ehelyett van sok apró, amiket egymással lehet
+kombiálni, így elérve a régi scriptek funkcionalitását.
