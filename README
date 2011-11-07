@@ -38,3 +38,22 @@ HASZNÁLAT:
 		.replace(" - VIP","");if(bl_users.indexOf(a)!=-1){$(this).parents('center:first').hide()}}
 		)});
 	</script>
+
+
+	Ha több scriptet akarsz használni, mindegyiknél ugyan így jársz el, több <script> blokkot hozol
+	létre. Példa:
+	
+	<script type="text/javascript">
+		kód
+	</script>
+	
+	<script type="text/javascript">
+		másik kód
+	</script>
+
+	
+	Ha az adott script rendelkezik beállítási lehetőségekkel, akkor azt a script kódjának elején 
+	találod. Érdemes elolvasni a scriptbe írt megjegyzéseket, megmagyarázzák hogy mit hol kell 
+	átírni ahhoz, hogy a várt eredményt kapd.
+	
+	
