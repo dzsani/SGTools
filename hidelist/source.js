@@ -8,7 +8,7 @@
 // akiknek rejteni szeretnéd az üzeneteit a témában. Szóközt ne használj!
 // Példa: var hl_users = 'név1,név2,név3';
 
-var hl_users = 'Ability';
+var hl_users = '';
 
 // EZT A RÉSZT NE MÓDOSÍTSD !!!
 $(document).ready(function() {
