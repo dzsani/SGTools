@@ -1,0 +1,94 @@
+<style type="text/css">
+#ext_wrapper {
+	width: 750px;
+	margin: 10px auto;
+	padding: 10px;
+	position: relative;
+	background-color: white;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-box-shadow: 0px 0px 5px 1px #6F7A87;
+	-moz-box-shadow: 0px 0px 5px 1px #6F7A87;
+	box-shadow: 0px 0px 5px 1px #6F7A87;
+	filter: progid:DXImageTransform.Microsoft.Glow(Color=#6F7A87,Strength=4);
+	text-align: left !important;
+}
+
+#ext_branches a, #ext_branches span {
+	font: normal normal bold 13px/16px Arial, serif;
+	text-shadow: #999 1px 1px 1px;
+	margin-right: 10px;
+}
+
+#ts_old_scripts {
+	margin-left: 110px;
+}
+
+#ext_desc {
+	margin-top: 10px;
+	text-align: justify;
+	font: normal normal normal 12px/16px Arial, serif;
+	color: #999;
+}
+
+.ext_h3 {
+	font: normal normal normal 16px/18px Arial, serif;
+	text-transform: uppercase;
+	color: #ccc;
+}
+
+#ext_bugpeport_anchor {
+	color: red;
+	float: right;
+}
+
+#ext_bugreport_iframe {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 900;
+	border: 0px;
+}
+</style>
+<script type="text/javascript" src="http://bugtracker_ts.dev.kreatura.hu/static/js/topic.js"></script>
+
+
+<div id="ext_wrapper">
+	<div id="ext_branches">
+		<span>GitHub repository:</span>
+		<a href="https://github.com/dzsani/SGTools" target="_blank">Master</a>
+		<a href="https://github.com/dzsani/SGTools" target="_blank">Nightly</a>
+		<a href="http://code.drom.hu/sgtools.html" id="ts_old_scripts" target="_blank">Régi scriptek</a>
+		
+		<a href="#" id="ext_bugpeport_anchor" class="ext_download">Hibanapló/Hibajelentés</a>
+	</div>
+	<div id="ext_desc">
+		<h3 class="ext_h3">Fejlesztői változatok:</h3>
+		<p>
+			Kettő fejlesztői ág létezik: Master és Nightly. Ezeket hívjuk branchoknak. 
+			A Master mindig az alaposan letesztelt, hiba nélküli változatot takarja. 
+			A Nightly-ban találjátok mindig a legfrissebb verziót, ami sok újdonságot hoz magával, 
+			azonban sok hibát is tartalmazhat. Mindenki saját belátása szerint válassza a neki kellőt. 
+			Ha nem fontos hogy azonnal hozzájuss a legújabb funkciókhoz akkor a Master-t válaszd. 
+			Ha nem tudsz várni, akkor a Nightly is nagy valószínűséggel használható.
+		</p>
+		<h3 class="ext_h3">Ideológia:</h3>
+		<p>
+			Minden egyes scriptnél az a cél, hogy minél kisebb, egyszerűbb legyen. Tekintsd őket
+			moduloknak, építőelemeknek. Nincs egy nagy script ami mindent tud, ehelyett van sok
+			apró, amiket lehet egymással kombinálni.
+		</p>
+		<h3 class="ext_h3">Használat:</h3>
+		<p>
+			A scriptek mappákba vannak rendezve. Minden mappában van egy source.js és egy minified.js.
+			A source.js a fejlesztőknek van fenntartva, akik talán bele akarnak majd szerkeszteni a
+			script működésébe. Aki csak használni akarja a scriptet, nekik a minified.js-t kell 
+			választaniuk. Használni a következőképpen tudod:<br><br>
+			
+			A kiválasztott script minified.js állományából kimásolod a teljes kódot. A topik fejlécébe
+			beírod a következőt: <br> &lt;script type="text/javascript"&gt; IDE MÁSOLOD A KÓDOT &lt;/script&gt;. 
+			További részletek a GitHub README állományában!
+		</p>
+	</div>
+</div>
