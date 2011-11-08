@@ -30,16 +30,26 @@ $(document).ready(function() {
 
 		// Get nickname
 		var nick = $('.std1:eq(1)').html().replace("Bejelentkezve: ","");
-		
+
 		// Check user
-		if(rot_users.indexOf(nick) == -1) {
+		if(rot_mode == 0) {
+			if(rot_users.indexOf(nick) == -1) {
 			
-			// Prevent browser default submission
-			e.preventDefault();
+				// Prevent browser default submission
+				e.preventDefault();
 			
-			// Show error message
-			alert('Nincs jogosultságod üzenetet küldeni ebbe a témába!');
+				// Show error message
+				alert('Nincs jogosultságod üzenetet küldeni ebbe a témába!');
+			}
+		} else {
+			if(rot_users.indexOf(nick) != -1) {
+			
+				// Prevent browser default submission
+				e.preventDefault();
+			
+				// Show error message
+				alert('Nincs jogosultságod üzenetet küldeni ebbe a témába!');
+			}
 		}
 	});
-	
 });
