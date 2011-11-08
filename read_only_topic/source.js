@@ -1,7 +1,15 @@
-// SG.hu topic read_only_topic v1.0 20111107
+// SG.hu read_only_topic v1.0 20111107
 // Készítette: dzsani
 // Inspiráció: cSuwwi - Drom - http://drom.hu/
 
+// Mûködési mód
+// 0: fehérlista, 1: feketelista
+// Ha nullán hagyod, akkor azok írhatnak a topikba,
+// akiket felsorolsz a lentebbi névlistába.
+// Ha egyre állítod, akkor mindenki írhat, kivéve
+// a lentebb felsorolt felhasználók.
+
+var rot_mode = 1;
 
 // Felhasználók fehérlistája
 // Vesszõvel elválasztva sorold fel azokat a felhasználóneveket

@@ -4,9 +4,9 @@
 
 // Mûködési mód
 // 0: fehérlista, 1: feketelista
-// Ha nullán hagyod, akkor azok írhatnak a topikba,
+// Ha nullán hagyod, akkor azok léphetnek be a topikba,
 // akiket felsorolsz a lentebbi névlistába.
-// Ha egyre állítod, akkor mindenki írhat, kivéve
+// Ha egyre állítod, akkor mindenki beléphet, kivéve
 // a lentebb felsorolt felhasználók.
 
 var pt_mode = 1;
