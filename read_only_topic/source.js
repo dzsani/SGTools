@@ -1,4 +1,4 @@
-// SG.hu read_only_topic v1.0 20111107
+// SG.hu read_only_topic v1.0 20111108
 // Készítette: dzsani
 // Inspiráció: cSuwwi - Drom - http://drom.hu/
 
