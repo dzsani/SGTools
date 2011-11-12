@@ -44,7 +44,7 @@ $(document).ready(function(){
 				
 				// Insert the image
 				if(typeof aw_users[c]['image'] != "undefined" && aw_users[c]['image'] != '') {
-					$('<img src="'+aw_users[c]['image']+'" align="absmiddle">').appendTo(placeholder);
+					$('<img src="'+aw_users[c]['image']+'" align="absmiddle">').appendTo(placeholder).css('border', 0);
 				}
 				
 				// Insert text
