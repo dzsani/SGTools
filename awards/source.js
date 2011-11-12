@@ -14,7 +14,8 @@
 // ];
 
 var aw_users = [
-	{ nick : '', placeholder : 0 }
+		{ nick : 'Ability', placeholder : 0, image : '/kep/faces/vigyor3.gif', tooltip : 'A téma házigazdája', text : 'Házigazda', url : '/forumuserinfo.php?uuserid=1105823948' },
+ 		{ nick : 'dzsaniii', placeholder : 1, image : '/kep/faces/bdead.gif', tooltip : 'Az alregem', text : 'Alreg' }
 ];
 
 
@@ -36,7 +37,7 @@ $(document).ready(function(){
 				
 				// Insert placeholder
 				if(aw_users[c]['placeholder'] == 0) {
-					var placeholder = $('<span></span>').insertAfter( $(this).find('td.left img:last') );
+					var placeholder = $('<span></span>').appendTo( $(this).find('td.left:eq(1)') );
 				} else {
 					var placeholder = $('<span></span>').insertAfter( $(this).find('a:last').prev() );
 					$('<span> | </span>').insertBefore(placeholder);
