@@ -36,7 +36,7 @@ $(document).ready(function(){
 				
 				// Insert placeholder
 				if(aw_users[c]['placeholder'] == 0) {
-					var placeholder = $('<span></span>').insertAfter( $(this).find('table:first img:last') );
+					var placeholder = $('<span></span>').insertAfter( $(this).find('td.left img:last') );
 				} else {
 					var placeholder = $('<span></span>').insertAfter( $(this).find('a:last').prev() );
 					$('<span> | </span>').insertBefore(placeholder);
