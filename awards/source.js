@@ -9,13 +9,13 @@
 // Példa:
 
 // var aw_users = [
-//		{ nick : 'Ability', placeholder : 0, image : '/kep/faces/vigyor3.gif', tooltip : 'A téma házigazdája', text : 'Házigazda', url : '/forumuserinfo.php?uuserid=1105823948' },
+//		{ nick : 'Ability', placeholder : 0, image : '/kep/faces/vigyor3.gif', tooltip : 'A téma házigazdája', text : 'Házigazda', color : 'red', url : '/forumuserinfo.php?uuserid=1105823948' },
 // 		{ nick : 'dzsaniii', placeholder : 1, image : '/kep/faces/bdead.gif', tooltip : 'Az alregem', text : 'Alreg' }
 // ];
 
 var aw_users = [
-		{ nick : 'Ability', placeholder : 0, image : '/kep/faces/vigyor3.gif', tooltip : 'A téma házigazdája', text : 'Házigazda', url : '/forumuserinfo.php?uuserid=1105823948' },
- 		{ nick : 'dzsaniii', placeholder : 1, image : '/kep/faces/bdead.gif', tooltip : 'Az alregem', text : 'Alreg' }
+		{ nick : '', placeholder : 0 },
+ 		
 ];
 
 
@@ -58,7 +58,12 @@ $(document).ready(function(){
 					$(placeholder).find('img, span').wrap('<a href="'+aw_users[c]['url']+'" target="_blank">');
 					$(placeholder).find('a').css({ 'text-decoration' : 'none', 'color' : '#fff' });
 				}
-
+			
+				// Set text color
+				if(typeof aw_users[c]['color'] != "undefined" && aw_users[c]['color'] != '') {
+					$(placeholder).find('a, span').css('color', aw_users[c]['color']);
+				}
+				
 				// Set Tooltip
 				if(typeof aw_users[c]['tooltip'] != "undefined" && aw_users[c]['tooltip'] != '') {
 					$(placeholder).find('img, span, a').attr('title', aw_users[c]['tooltip']);
