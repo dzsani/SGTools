@@ -11,6 +11,8 @@
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('.msg-text').next().click();
+		$('.msg-text').each(function() {
+			$(this).next().click();
+		});
 	});
 </script>
