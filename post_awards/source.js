@@ -1,23 +1,31 @@
-// SG.hu awards v1.0 20111112
+// SG.hu post_awards v1.0 20111112
 // Készítette: dzsani
 // Inspiráció: cSuwwi - Drom - http://drom.hu/
 
 // Awards lista Objektum
-// Az objektum elemei közül a nick és a placeholder elemeket kell 
-// kötelezõen megadni. A többi elem tetszés szerint elhagyható.
-// A objektum elemeinek listjáa a lenti példában található.
+// Az objektum elemei közül egyedül a nick elemet kötelezõ megadni,
+// a többi tetszés szerint elhagyható. Az objektum lehetséges elemeit
+// lentebb láthatod.
+
+// Az awards objektum lehetséges elemei:
+// - nick: kötelezõ, keresett felhasználó
+// - placeholder: elhagyható, 0: logó után, 1: kommentazonosító elé, alapértelmezett: 1 
+// - image: elhagyható, képet szúr be, egy kép URL-jét kell megadni
+// - text: elhagyható, egy szöveget szúr be a script
+// - tooltip: elhagyható, egérrel a beszúrt elemek fölé állva kiírja az itt megadott szöveget
+// - color: elhagyható, a beszúrt szöveg színét lehet megadni vele
+// - url: elhagyható, a beszúrt képet ésvagy szöveget lehet linkelni vele
+
 // Példa:
 
 // var aw_users = [
-//		{ nick : 'Ability', placeholder : 0, image : '/kep/faces/vigyor3.gif', tooltip : 'A téma házigazdája', text : 'Házigazda', color : 'red', url : '/forumuserinfo.php?uuserid=1105823948' },
-// 		{ nick : 'dzsaniii', placeholder : 1, image : '/kep/faces/bdead.gif', tooltip : 'Az alregem', text : 'Alreg' }
+//		{ nick : 'Ability', placeholder : 0, image : '/kep/faces/vigyor3.gif' },
+// 		{ nick : 'dzsaniii', placeholder : 1, text : 'Alreg' }
 // ];
 
 var aw_users = [
 		{ nick : '', placeholder : 0 },
- 		
 ];
-
 
 
 // EZT A RÉSZT NE MÓDOSÍTSD !!!
@@ -36,7 +44,7 @@ $(document).ready(function(){
 			if(nick == aw_users[c]['nick']) {
 				
 				// Insert placeholder
-				if(aw_users[c]['placeholder'] == 0) {
+				if(typeof aw_users[c]['placeholder'] != "undefined" && aw_users[c]['placeholder'] == 0) {
 					var placeholder = $('<span></span>').appendTo( $(this).find('td.left:eq(1)') );
 				} else {
 					var placeholder = $('<span></span>').insertAfter( $(this).find('a:last').prev() );
