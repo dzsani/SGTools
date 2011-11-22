@@ -1,6 +1,5 @@
 // SG.hu private_topic v1.0 20111108
 // Készítette: dzsani
-// Inspiráció: cSuwwi - Drom - http://drom.hu/
 
 // Mûködési mód
 // 0: fehérlista, 1: feketelista

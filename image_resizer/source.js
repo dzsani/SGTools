@@ -1,6 +1,5 @@
 // SG.hu image_resizer v1.0 20111108
 // Készítette: dzsani
-// Inspiráció: cSuwwi - Drom - http://drom.hu/
 
 $(document).ready(function() {
 	

@@ -1,6 +1,5 @@
 // SG.hu remove_ads v1.0 20111113
 // Készítette: dzsani
-// Inspiráció: cSuwwi - Drom - http://drom.hu/
 
 // Ezzel a scripttel eltüntetheted az összes
 // reklámot egy témából.

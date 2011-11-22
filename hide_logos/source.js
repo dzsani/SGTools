@@ -1,6 +1,5 @@
 // SG.hu hide_logos v1.0 20111114
 // Készítette: dzsani
-// Inspiráció: cSuwwi - Drom - http://drom.hu/
 
 // Ezzel a script eltávolítja az összes logót
 // és a felhasználónevet teszi a helyére.

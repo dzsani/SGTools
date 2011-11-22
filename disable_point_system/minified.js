@@ -1,6 +1,5 @@
 // SG.hu disable_point_system v1.0 20111113
 // Készítette: dzsani
-// Inspiráció: cSuwwi - Drom - http://drom.hu/
 
 // Ezzel a scripttel teljesen kikapcsolhatod a
 // pontrendszert.
