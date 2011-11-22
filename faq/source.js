@@ -40,7 +40,7 @@ $(document).ready(function() {
 	$('<a href="#" id="faq_close">bezárás</a>').prependTo('body');
 	
 	// Apply some styles to close button
-	$('#faq_close').css({ position : 'fixed', bottom : 10, right : 10, display : 'none', zIndex : 501, color : '#fff', textDecoration : 'none' });
+	$('#faq_close').css({ position : 'fixed', left : 10, top : 10, display : 'none', zIndex : 501, color : '#fff', textDecoration : 'none' });
 	
 	// Set show event
 	$('#faq_toggle').click(function(e) {
