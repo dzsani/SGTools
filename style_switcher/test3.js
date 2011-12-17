@@ -1,0 +1,9 @@
+var sw_styles = new Array();
+	sw_styles.push({ css : 'https://raw.github.com/dzsani/SGTools/nightly/style_switcher/test.css', js : 'https://raw.github.com/dzsani/SGTools/nightly/style_switcher/test.js' });
+	sw_styles.push({ css : '', js : 'https://raw.github.com/dzsani/SGTools/nightly/style_switcher/test2.js' });
+
+var sw_default = 0;
+
+
+// EZT A RÉSZT NE MÓDOSÍTSD !!!
+var style_switcher={init:function(){var a=style_switcher.getTopicId();var b=style_switcher.getSkin(a);if(b===false||b=="false"){return}style_switcher.loadSkin(b)},switchTo:function(a){var b=style_switcher.getTopicId();style_switcher.setCookie("skin_"+b,a,100);window.location.reload()},getTopicId:function(){return document.location.href.split("?")[1].split("&")[0].split("=")[1]},getSkin:function(a){var b=style_switcher.getCookie("skin_"+a);if(typeof b=="undefined"&&b==null){return sw_default}else{return b}},loadSkin:function(a){if(typeof sw_styles[a]["css"]!="undefined"&&sw_styles[a]["css"]!=""){$('<link type="text/css" href="'+sw_styles[a]["css"]+'" rel="stylesheet">').appendTo("head")}if(typeof sw_styles[a]["js"]!="undefined"&&sw_styles[a]["js"]!=""){$('<script type="text/javascript" src="'+sw_styles[a]["js"]+'"></script>').appendTo("head")}},setCookie:function(a,b,c){var d=new Date;d.setDate(d.getDate()+c);var e=escape(b)+(c==null?"":"; expires="+d.toUTCString());document.cookie=a+"="+e},getCookie:function(a){var b,c,d,e=document.cookie.split(";");for(b=0;b<e.length;b++){c=e[b].substr(0,e[b].indexOf("="));d=e[b].substr(e[b].indexOf("=")+1);c=c.replace(/^\s+|\s+$/g,"");if(c==a){return unescape(d)}}}};$(document).ready(function(){style_switcher.init()})
