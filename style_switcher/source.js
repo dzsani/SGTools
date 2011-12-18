@@ -1,35 +1,34 @@
 // SG.hu style_switcher v1.0 20111217
-// K√©sz√≠tette: dzsani
+// KÈszÌtette: dzsani
 
-// St√≠luslista
+// StÌluslista
 // Itt sorold fel hogy milyen skinek legyenek
-// √©s azokhoz milyen CSS + JS tartozik. P√©lda:
+// Ès azokhoz milyen CSS + JS tartozik. PÈlda:
 //
 // var sw_styles = new Array();
-// sw_styles.push({ css : 'link1.css', js : 'link1.js' });
-// sw_styles.push({ css : 'link2.css', js : 'link2.js' });
+// sw_styles.push({ css : ['link1.css', 'link2,css'], js : ['link1.js'] });
+// sw_styles.push({ css : ['link3.css'], js : ['link2.js'] });
 
 
 var sw_styles = new Array();
-	sw_styles.push({ css : '', js : '' });
-	sw_styles.push({ css : '', js : '' });
+	sw_styles.push({ css : [''], js : [''] });
 
 
 
-// Alap√©rtelmezett skin sorsz√°ma
-// Null√°t√≥l kezd≈ëdik a sorsz√°m, nulla az els≈ë elem
-// False ha mell≈ëzni akarjuk a skinek bet√∂lt√©s√©t
+// AlapÈrtelmezett skin sorsz·ma
+// Null·tÛl kezdıdik a sorsz·m, nulla az elsı elem
+// False ha mellızni akarjuk a skinek betˆltÈsÈt
 var sw_default = 0;
 
 
-// HASZN√ÅLAT - gombok a topikba
-// <a href="javascript:style_switcher.switchTo(false);">Nincs t√©ma</a>
-// <a href="javascript:style_switcher.switchTo(0);">Els≈ë t√©ma</a>
-// <a href="javascript:style_switcher.switchTo(1);">M√°sodik t√©ma</a>
+// HASZN¡LAT - gombok a topikba
+// <a href="javascript:style_switcher.switchTo(false);">Nincs tÈma</a>
+// <a href="javascript:style_switcher.switchTo(0);">Elsı tÈma</a>
+// <a href="javascript:style_switcher.switchTo(1);">M·sodik tÈma</a>
 
 
 
-// EZT A R√âSZT NE M√ìDOS√çTSD !!!
+// EZT A R…SZT NE M”DOSÕTSD !!!
 var style_switcher = {
 
 	init : function() {
@@ -81,13 +80,21 @@ var style_switcher = {
 	
 		// CSS
 
-		if(typeof sw_styles[skin]['css'] != 'undefined' && sw_styles[skin]['css'] != '') {
-			$('<link type="text/css" href="'+sw_styles[skin]['css']+'" rel="stylesheet">').appendTo('head');
+		if(typeof sw_styles[skin]['css'] != 'undefined') {
+			for(c = 0; c < sw_styles[skin]['css'].length; c++) {
+				if(sw_styles[skin]['css'][c] != '') {
+					$('<link type="text/css" href="'+sw_styles[skin]['css'][c]+'" rel="stylesheet">').appendTo('head');
+				}
+			}
 		}
 		
 		// JS
-		if(typeof sw_styles[skin]['js'] != 'undefined' && sw_styles[skin]['js'] != '') {
-			$('<script type="text/javascript" src="'+sw_styles[skin]['js']+'"></script>').appendTo('head');
+		if(typeof sw_styles[skin]['js'] != 'undefined') {
+			for(c = 0; c < sw_styles[skin]['js'].length; c++) {
+				if(sw_styles[skin]['js'][c] != '') {
+					$('<script type="text/javascript" src="'+sw_styles[skin]['js'][c]+'"></script>').appendTo('head');
+				}
+			}
 		}
 	},
 	
